@@ -893,7 +893,7 @@ void Just_Got_Thrown( gentity_t *self ) {
 			player = AICast_FindEntityForName( "player" );
 
 			if ( player && player != self->enemy ) {
-				G_Damage( self->enemy, self, player, NULL, NULL, 5, 0, MOD_CRUSH );
+				G_Damage( self->enemy, self, player, NULL, NULL, 150, 0, MOD_CRUSH );
 
 				self->die = Props_Chair_Die;
 

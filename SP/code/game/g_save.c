@@ -653,6 +653,7 @@ void ReadClient( fileHandle_t f, gclient_t *client, int size ) {
 	// don't allow full run speed for a bit
 	//if (client->ps.clientNum == 0) {	// only set this for the player
 	client->ps.pm_flags |= PMF_TIME_LOAD;
+	client->ps.powerups[PW_NOFATIGUE] = 8000 ;
 	client->ps.pm_time = 1000;
 	if ( client->ps.aiChar ) {
 		client->ps.pm_time = 800;

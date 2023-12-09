@@ -86,6 +86,11 @@ void TossClientItems( gentity_t *self ) {
 	gentity_t   *drop = 0;
 	gentity_t   *drop2 = 0; //mod
 	gitem_t     *item2; //mod
+	int randhelp1 = 0;
+	int randhelp2 = 0;
+	int auxInt = 0;
+	sting auxItem;
+	char arrRandItem[2] = {"Small Health", "Armored Helmet"};
 
 	// drop the weapon if not a gauntlet or machinegun
 	weapon = self->s.weapon;
@@ -141,9 +146,12 @@ void TossClientItems( gentity_t *self ) {
 		if ( !( self->client->ps.persistant[PERS_HWEAPON_USE] ) ) {
 			drop = Drop_Item( self, item, 0, qfalse );
 		}
-		int randhelp = rand() % (7 + 1 - 1) + 1;
+		auxInt = rand(); 
+		randhelp1 = auxInt % (7 + 1 - 1) + 1;
+		randhelp2 = auxInt % (2 + 0 - 1) + 0;
+		auxItem = arrRandItem[randhelp2];
 		if(randhelp == 3){
-			item2 = BG_FindItem2("Small Health");
+			item2 = BG_FindItem2(auxItem);
 			drop2 = Drop_Item (self, item2, 90, qfalse);
 		}
 	}

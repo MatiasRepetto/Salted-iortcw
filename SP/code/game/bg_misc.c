@@ -565,7 +565,9 @@ model="models/powerups/health/health_s.md3"
 		"sound/pickup/health/health_pickup.wav",
 		{   "models/powerups/health/health_s.md3",
 			0,
-			0, 0,  0 },
+			0, 
+			0,  
+			0 },
 		"icons/iconh_small",
 		NULL,   // ammo icon
 		"Small Health",

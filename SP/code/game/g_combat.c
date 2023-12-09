@@ -84,6 +84,8 @@ void TossClientItems( gentity_t *self ) {
 	float angle;
 	int i;
 	gentity_t   *drop = 0;
+	gentity_t   *drop2 = 0; //mod
+	gitem_t     *item2; //mod
 
 	// drop the weapon if not a gauntlet or machinegun
 	weapon = self->s.weapon;
@@ -139,11 +141,19 @@ void TossClientItems( gentity_t *self ) {
 		if ( !( self->client->ps.persistant[PERS_HWEAPON_USE] ) ) {
 			drop = Drop_Item( self, item, 0, qfalse );
 		}
+		int randhelp = rand() % (7 + 1 - 1) + 1;
+		if(randhelp == 3){
+			item2 = BG_FindItem2("Small Health");
+			drop2 = Drop_Item (self, item2, 90, qfalse);
+		}
 	}
 
 	if ( g_gametype.integer == GT_SINGLE_PLAYER ) {  // dropped items stay forever in SP
 		if ( drop ) {
 			drop->nextthink = 0;
+		}
+		if ( drop2 ) {
+			drop2->nextthink = 0;
 		}
 	}
 

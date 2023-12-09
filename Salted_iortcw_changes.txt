@@ -4,3 +4,5 @@
    deal enormous quantity of damage before you can sprint in a saved game previous frame. 
    
 3) Now chairs deal fatal damage when you throw it at enemies, good mechanic for some stealth variety gameplay.
+
+4) Now you have a certain amount of probability that an enemy drops a Small Health pack. (Low probability so as not to break the gameplay).

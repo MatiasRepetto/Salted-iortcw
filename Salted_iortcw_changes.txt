@@ -1,4 +1,4 @@
-1) 1942 Chateu Lafite give you stamina, and can give you up to 25 plus health points for a few seconds.
+1) 1938 Chateau Latour give you stamina, and can give you up to 25 plus health points for a few seconds.
 
 2) Now you have 8 seconds of stamina after you lead a saved game, due unfair boss fights that
    deal enormous quantity of damage before you can sprint in a saved game previous frame. 
@@ -6,3 +6,5 @@
 3) Now chairs deal fatal damage when you throw it at enemies, good mechanic for some stealth variety gameplay.
 
 4) Now you have a certain amount of probability that an enemy drops a Small Health/Armored Helmet. (Low probability so as not to break the gameplay).
+
+5) New pack of guns thanks to William Faure all credits to him with this pack !

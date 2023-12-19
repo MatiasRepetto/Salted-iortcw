@@ -90,7 +90,7 @@ void TossClientItems( gentity_t *self ) {
 	int randhelp2 = 0;
 	int auxInt = 0;
 	char* auxItem;
-	char arrRandItem[2][50] = {"Small Health", "Armored Helmet"};
+	char arrRandItem[2][50] = {"item_stamina_stein", "holdable_wine"};
 
 	// drop the weapon if not a gauntlet or machinegun
 	weapon = self->s.weapon;

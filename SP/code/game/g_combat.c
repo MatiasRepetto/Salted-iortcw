@@ -147,7 +147,7 @@ void TossClientItems( gentity_t *self ) {
 			drop = Drop_Item( self, item, 0, qfalse );
 		}
 		auxInt = rand(); 
-		randhelp1 = auxInt % (20 + 1 - 1) + 1;
+		randhelp1 = auxInt % (25 + 1 - 1) + 1;
 		randhelp2 = auxInt % (1 + 1 - 0) + 0;
 		auxItem = arrRandItem[randhelp2];
 		if(randhelp1 == 3){

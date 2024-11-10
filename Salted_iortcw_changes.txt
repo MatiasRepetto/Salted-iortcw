@@ -6,3 +6,5 @@
 3) Now chairs deal fatal damage when you throw it at enemies, good mechanic for some stealth variety gameplay.
 
 4) Now you have a certain amount of probability that an enemy drops a Aemored Helmet. (Low probability so as not to break the gameplay).
+
+5) Now when you consume a portion of wine the character plays a drunked sound.

@@ -217,6 +217,8 @@ UseHoldableItem
 void UseHoldableItem( gentity_t *ent, int item ) {
 	switch ( item ) {
 	case HI_WINE:           // 1921 Chateu Lafite - gives 25 pts health up to max health
+		int auxSoundWine = G_SoundIndex( "sound/scenaric/village1/drunk1_chorus3.wav" );
+		G_Sound( ent, auxSoundWine );
 		ent->health += 25;
 		ent->client->ps.powerups[PW_NOFATIGUE] = 60000; // 1921 Chateau Lafite now can give no fatigue for 60 seconds and restore stamina
 		if ( ent->health > ent->client->ps.stats[STAT_MAX_HEALTH] + 25 ) { // 1921 Chateau Lafite now can heal plus 25 points to the maximum health

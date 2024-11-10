@@ -90,7 +90,7 @@ void TossClientItems( gentity_t *self ) {
 	int randhelp2 = 0;
 	int auxInt = 0;
 	char* auxItem;
-	char arrRandItem[2][50] = {"item_stamina_stein", "holdable_wine"};
+	char arrRandItem[1][50] = {"Armored Helmet"};
 
 	// drop the weapon if not a gauntlet or machinegun
 	weapon = self->s.weapon;
@@ -148,8 +148,8 @@ void TossClientItems( gentity_t *self ) {
 		}
 		auxInt = rand(); 
 		randhelp1 = auxInt % (25 + 1 - 1) + 1;
-		randhelp2 = auxInt % (1 + 1 - 0) + 0;
-		auxItem = arrRandItem[randhelp2];
+		//randhelp2 = auxInt % (1 + 1 - 0) + 0;
+		auxItem = arrRandItem[0];
 		if(randhelp1 == 3){
 			item2 = BG_FindItem2(auxItem);
 			drop2 = Drop_Item (self, item2, 0, qfalse);
